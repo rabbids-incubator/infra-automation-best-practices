@@ -50,7 +50,12 @@ This is done automatically by the GitLab CI pipeline, which is defined in [.gitl
 ## How to run locally the pipeline
 
 ```bash
+# creates local folder
 mkdir -p .gitlab/runner/local
+
+# runs ci job
 docker run --rm --name gitlab-runner -v /var/run/docker.sock:/var/run/docker.sock -v $PWD/.gitlab/runner/local/config:/etc/gitlab-runner -v $PWD:$PWD --workdir $PWD gitlab/gitlab-runner exec docker ci
+
+# runs pages job
 docker run --rm --name gitlab-runner -v /var/run/docker.sock:/var/run/docker.sock -v $PWD/.gitlab/runner/local/config:/etc/gitlab-runner -v $PWD:$PWD --workdir $PWD gitlab/gitlab-runner exec docker pages
 ```
