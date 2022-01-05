@@ -1,0 +1,5 @@
+# temporary files
+/.gitlab/
+/build/
+/docs/*.html
+/docs/*.pdf
