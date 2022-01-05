@@ -1,0 +1,22 @@
+image: node:lts
+
+ci:
+  stage: build
+  before_script:
+    - npm install -g @marp-team/marp-cli
+  script:
+    - marp docs/*.md
+
+pages:
+  stage: build
+  before_script:
+    - npm install -g @marp-team/marp-cli
+  script:
+    - marp docs/*.md
+    - mkdir build
+    - cp docs/*.html build/
+  artifacts:
+    paths:
+      - build
+  only:
+    - main
