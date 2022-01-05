@@ -14,9 +14,9 @@ pages:
   script:
     - marp docs/*.md
     - mkdir build
-    - cp docs/*.html build/
+    - cp docs/*.html public/
   artifacts:
     paths:
-      - build
+      - public
   only:
     - main
