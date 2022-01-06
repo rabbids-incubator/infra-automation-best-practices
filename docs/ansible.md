@@ -133,6 +133,6 @@ Inventories can be:
 
 * [rabbids-incubator/ansible-system-collection](https://github.com/rabbids-incubator/ansible-system-collection)
 
-## Ansible part done for now
+## Bye for now
 
 You can go back to the presentation [home page](./index.html)

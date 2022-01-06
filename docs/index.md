@@ -80,7 +80,7 @@ Helpers:
 
 ## Tools
 
-* git
+* [git](./git.html)
 
 ## That's all folks
 
