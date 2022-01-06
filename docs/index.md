@@ -16,9 +16,15 @@ _class:
 
 ## What?
 
-Infrastructure automation is key in any organization in order to optimize everyone work, be able to meet business targets and ensure the system can be resilient and faultless.
+Infrastructure automation helps an organization optimize everyone's work, meet business targets and ensure the system can be resilient and faultless.
 
-Infrastructure automation is done through IaC (Infrastrure-as-code) approach, where the infrastructure is defined in code using frameworks such as Terraform, Ansible, Chef to deploy it on multiple environments.
+It is done through IaC (Infrastrure-as-code) approach, where the infrastructure is defined in source code using frameworks, such as Terraform or Ansible.
+
+## Who?
+
+This is set of best practices from a open community.
+
+Everyone is welcome to contribue through pull requests or issues on [rabbids-incubator/infra-automation-best-practices](https://github.com/rabbids-incubator/infra-automation-best-practices) repository.
 
 ## Principles (1/2)
 
