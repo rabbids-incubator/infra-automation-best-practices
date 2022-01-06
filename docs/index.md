@@ -61,11 +61,13 @@ All IaC source code MUST BE **idempotent**!
 - Call operation B => system state 3
 ```
 
-## Mardown
+## Markdown
 
 > Markdown is a plain text format for writing structured documents, based on formatting conventions from email and usenet.
 
 → [commonmark.org](https://commonmark.org/)
+
+Helpers:
 
 * [Learn Markdown in 60 seconds](https://commonmark.org/help/)
 * [Markdown emojis](https://github.com/markdown-templates/markdown-emojis)
