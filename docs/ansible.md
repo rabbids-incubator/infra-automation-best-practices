@@ -116,10 +116,12 @@ Inventories can be:
   * Git repository
   * Shared folder
 
+:bulb: [yaani](https://github.com/a-delannoy/yaani) can be used to merge multiple sources
+
 ## Readability
 
-* Name explicitly the plays, tasks, variables
-* Use native YAML (avoid key=value shorthand)
+* Name all the things explicitly: plays, tasks, variables
+* Use native YAML: avoid key=value shorthand
 * Prefer modules over commands
 * Clean up debug messages
 
@@ -127,6 +129,10 @@ Inventories can be:
 
 * [Ansible Best Practices](https://ansible.github.io/workshops/decks/ansible_best_practices.pdf)
 
-## That's all folks
+## Samples
+
+* [rabbids-incubator/ansible-system-collection](https://github.com/rabbids-incubator/ansible-system-collection)
+
+## Bye for now
 
 You can go back to the presentation [home page](./index.html)

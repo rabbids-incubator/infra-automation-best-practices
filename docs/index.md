@@ -16,28 +16,61 @@ _class:
 
 ## What?
 
-Infrastructure automation helps an organization optimize everyone's work, meet business targets and ensure the system can be resilient and faultless.
+> Infrastructure automation is the use of technology that performs tasks with reduced human assistance in order to control the hardware, software, networking components, operating system (OS), and data storage components used to deliver information technology services and solutions.
 
-It is done through IaC (Infrastrure-as-code) approach, where the infrastructure is defined in source code using frameworks, such as Terraform or Ansible.
+→ [redhat.com](https://www.redhat.com/en/topics/automation/what-is-infrastructure-automation)
 
 ## Who?
 
-This is set of best practices from a open community.
+This is a set of best practices from an **open community**.
 
-Everyone is welcome to contribue through pull requests or issues on [rabbids-incubator/infra-automation-best-practices](https://github.com/rabbids-incubator/infra-automation-best-practices) repository.
+Everyone is welcome to contribue through pull requests, issues and social media sharings!
 
-## Principles (1/2)
+→ [rabbids-incubator/infra-automation-best-practices](https://github.com/rabbids-incubator/infra-automation-best-practices)
+
+## Infrastructure as Code (IaC)
+
+> Infrastructure as Code is the management of infrastructure (networks, virtual machines, load balancers, and connection topology) in a descriptive model, using the same versioning as DevOps team uses for source code. Like the principle that the same source code generates the same binary, an IaC model generates the same environment every time it is applied. IaC is a key DevOps practice and is used in conjunction with continuous delivery.
+
+→ [docs.microsoft.com](https://docs.microsoft.com/en-us/devops/deliver/what-is-infrastructure-as-code)
+
+## Design principles
 
 * **KISS** (Keep It Simple): take the time to use the easiest solution possible (vs. KICKME = Keep It Complicated Keep Me Employed)
 * **Sharing**: documentation (no knowledge should be in people's head only), presentations, break silos
 * **Resiliency**: build highly available systems, any task can be performed by more than one person (fight the "Heroe" mode)
 * **State of the Art**: use the latest best practices and technologies
 
-## Principles (2/2)
+## Source code principles
 
 * **DRY** (code): Don't Repeat Yourself
 * **Open source / InnerSource** (model): shared components, everyone can contribute, high quality, ready to use, reusability
 * **Craftmanship**: value quality and seek expertise
+
+## Idempotence
+
+Idempotence is the property of operations that can be applied multiple times without changing the results.
+
+All IaC source code MUST BE **idempotent**!
+
+```txt
+- Initial system state 1
+- Call operation A => system state 2
+- Call operation A => system state 2
+- Call operation A => system state 2
+- Call operation B => system state 3
+```
+
+## Markdown
+
+> Markdown is a plain text format for writing structured documents, based on formatting conventions from email and usenet.
+
+→ [commonmark.org](https://commonmark.org/)
+
+Helpers:
+
+* [Learn Markdown in 60 seconds](https://commonmark.org/help/)
+* [Markdown emojis](https://github.com/markdown-templates/markdown-emojis)
 
 ## Frameworks
 
@@ -47,5 +80,12 @@ Everyone is welcome to contribue through pull requests or issues on [rabbids-inc
 
 ## Tools
 
-* git
-* GitLab
+* [git](./git.html)
+
+## That's all folks
+
+We'll be glad to have your feedback and support:
+
+→ [rabbids-incubator/infra-automation-best-practices](https://github.com/rabbids-incubator/infra-automation-best-practices)
+
+Happy updates!
