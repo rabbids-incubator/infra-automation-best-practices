@@ -13,8 +13,9 @@ pages:
     - npm install -g @marp-team/marp-cli
   script:
     - marp docs/*.md
-    - mkdir public
+    - mkdir -p public/img
     - cp docs/*.html public/
+    - cp docs/img/*.* public/img/
   artifacts:
     paths:
       - public

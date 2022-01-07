@@ -37,21 +37,24 @@ Everyone is welcome to contribue through pull requests, issues and social media 
 ## Design principles
 
 * **KISS** (Keep It Simple): take the time to use the easiest solution possible (vs. KICKME = Keep It Complicated Keep Me Employed)
+
 * **Sharing**: documentation (no knowledge should be in people's head only), presentations, break silos
+
 * **Resiliency**: build highly available systems, any task can be performed by more than one person (fight the "Heroe" mode)
+
 * **State of the Art**: use the latest best practices and technologies
 
 ## Source code principles
 
 * **DRY** (code): Don't Repeat Yourself
+
 * **Open source / InnerSource** (model): shared components, everyone can contribute, high quality, ready to use, reusability
+
 * **Craftmanship**: value quality and seek expertise
 
 ## Idempotence
 
-Idempotence is the property of operations that can be applied multiple times without changing the results.
-
-All IaC source code MUST BE **idempotent**!
+> Idempotence is the property of certain operations whereby they can be applied multiple times without changing the result beyond the initial application
 
 ```txt
 - Initial system state 1
@@ -61,16 +64,27 @@ All IaC source code MUST BE **idempotent**!
 - Call operation B => system state 3
 ```
 
+:warning: All IaC source code MUST be **idempotent**!
+
 ## Markdown
 
-> Markdown is a plain text format for writing structured documents, based on formatting conventions from email and usenet.
+> Markdown is a plain text format for writing structured documents, based on formatting conventions from email and usenet
 
 → [commonmark.org](https://commonmark.org/)
 
-Helpers:
+```md
+# Title
+
+## Chapter 1
+
+Some _italic_ and **bold** element.
+```
+
+## Markdown quickstart
 
 * [Learn Markdown in 60 seconds](https://commonmark.org/help/)
 * [Markdown emojis](https://github.com/markdown-templates/markdown-emojis)
+* [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) (Visual Studio Code)
 
 ## Frameworks
 
@@ -82,10 +96,29 @@ Helpers:
 
 * [git](./git.html)
 
+## General knowledge
+
+* Deployment strategies
+  * Blue/Green deployments
+  * Canary Releases
+* Project lifecycle
+
+## Blue/Green Deployments
+
+![Blue/Green deployment schema](./img/blue_green_deployments.png)
+
+## Canary Releases
+
+![Canary release](./img/canary_release.png)
+
+## Project lifecycle
+
+![Project lifecycle](./img/project_lifecycle.png)
+
 ## That's all folks
 
 We'll be glad to have your feedback and support:
 
 → [rabbids-incubator/infra-automation-best-practices](https://github.com/rabbids-incubator/infra-automation-best-practices)
 
-Happy updates!
+Happy updates :smile:
