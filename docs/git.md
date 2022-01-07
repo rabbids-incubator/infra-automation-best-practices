@@ -14,33 +14,17 @@ _class:
 
 # Git best practices
 
-## Configuration on Windows
-
-```bash
-# displays git configuration on Windows
-more %userprofile%\.gitconfig
-
-# edits the configuration by opening an editor
-git config --global --edit
-
-# enables long paths
-git config --global core.longpaths true
-
-# disables end of line mess up (not git responsibility)
-git config --global core.autocrlf false
-```
-
 ## Naming conventions
 
 **kebab-case** for all names: repositories, branches, tags
-
-Words in lower case, separated by dashes
 
 :red_circle: BadName
 
 :white_check_mark: good-name
 
 :red_circle: bad_name_returns
+
+:bulb: Words in lower case, separated by dashes
 
 ## GitFlow approach
 
@@ -85,6 +69,22 @@ git checkout main
 
 # displays status
 git status
+```
+
+## CLI configuration on Windows
+
+```bash
+# displays git configuration on Windows
+more %userprofile%\.gitconfig
+
+# edits the configuration by opening an editor
+git config --global --edit
+
+# enables long paths
+git config --global core.longpaths true
+
+# disables end of line mess up (not git responsibility)
+git config --global core.autocrlf false
 ```
 
 ## GUIs
