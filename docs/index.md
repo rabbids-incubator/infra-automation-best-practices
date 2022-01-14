@@ -84,7 +84,7 @@ Some _italic_ and **bold** element.
 
 * [Learn Markdown in 60 seconds](https://commonmark.org/help/)
 * [Markdown emojis](https://github.com/markdown-templates/markdown-emojis)
-* [markdownlint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) (Visual Studio Code)
+* `markdownlint`: [Visual Studio Code extension](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint), [NPM CLI tool](https://github.com/igorshubovych/markdownlint-cli)
 
 ## Frameworks
 

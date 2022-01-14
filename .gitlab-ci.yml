@@ -1,16 +1,18 @@
 image: node:lts
 
+before_script:
+  - npm install -g markdownlint-cli
+  - npm install -g @marp-team/marp-cli
+
 ci:
   stage: build
-  before_script:
-    - npm install -g @marp-team/marp-cli
   script:
+    - markdownlint README.md
+    - markdownlint docs/*.md
     - marp docs/*.md
 
 pages:
   stage: build
-  before_script:
-    - npm install -g @marp-team/marp-cli
   script:
     - marp docs/*.md
     - mkdir -p public/img
